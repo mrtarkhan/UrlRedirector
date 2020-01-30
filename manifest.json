@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "URL Redirector",
+	"author": "Mohammadreza Tarkhan",
+    "description": "This extension will redirect a url to another url, it is really simple and it is for personal use, i recommend you do not use it!",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "tabs",
+        "webRequest",
+        "<all_urls>",
+        "webRequestBlocking"
+    ]
+}
